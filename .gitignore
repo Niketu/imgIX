@@ -1,0 +1,16 @@
+/dist
+/tmp
+out_tsc
+/node_modules
+chrome-profiler-events.json
+speed-meauser-plugin.json
+.vscode/*
+
+.angular/*
+
+node_moduled
+**/DS_Store
+.DS_Store
+*.DS_Store
+Thumbs.db
+package-lock.json

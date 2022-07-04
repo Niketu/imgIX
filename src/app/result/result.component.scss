@@ -1,0 +1,37 @@
+.image-container {
+    width: 100%;
+    height: 100%;
+    border: 2px groove rgb(68, 66, 66);
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-url {
+    width: 90%;
+}
+
+.result-container > * {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) { 
+
+    .result-container > * {
+        margin: 5px;
+    }
+ }
+
+ @media screen and (max-width:992px) {
+
+    .image-container {
+        border: 1px solid rgb(68, 66, 66);
+    } 
+
+    .result-container {
+        margin: 1em 0;
+        padding-bottom: 1em;
+    }
+}

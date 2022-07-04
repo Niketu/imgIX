@@ -1,0 +1,25 @@
+<div class="attribute-container">
+    <div class="attribute-section">
+        <label for="custAttr" class="attribute-header">Customizable Attributes</label>
+        <div class="d-flex flex-column">
+            <label for="coverText" class="attribute-label">Cover Text</label>
+            <input type="text" [(ngModel)]="imageAttributes.txt" maxLength="23" class="ml-1">
+            <span *ngIf="imageAttributes && imageAttributes.txt">{{ 23 - getImageTextLength() }}/23 characters remaining.</span>
+        </div>
+        <div>
+            <input type="color" [(ngModel)]="imageAttributes.blend">
+            <label for="blend" class="attribute-label ml-2">Overlay color</label>
+        </div>
+    </div>
+    <div class="attribute-section d-flex flex-column">
+        <label for="selectImage" class="attribute-header">Select Image</label>
+        <div class="image-list">
+            <img *ngFor="let imageUrl of imageList; let i = index" [src]='imageUrl'
+                (click)="updateBaseUrl($event.target, i)" alt="image{{i}}"
+                [ngClass]="{'selected-image' : isSelected(i)}">
+        </div>
+    </div>
+    <div class="attribute-section d-flex justify-content-center">
+        <button class="btn btn-primary" (click)="applyAttributes()">Apply</button>
+    </div>
+</div>

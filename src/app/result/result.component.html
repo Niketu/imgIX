@@ -1,0 +1,9 @@
+<div class="result-container">
+    <div class="d-flex justify-content-center">
+        <input type="text" [value]="consolidateUrl" class="image-url" readonly>
+        <a href="#" (click)="copyLink()" class="ml-2"><i class="bi bi-clipboard"></i></a>
+    </div>
+    <div class="image-container">
+        <img [src]="consolidateUrl" alt="Select image from attribute section">
+    </div>
+</div>

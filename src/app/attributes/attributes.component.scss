@@ -1,0 +1,34 @@
+.attribute-container {
+    height: calc(100vh - 56px);
+    border-left: 1px solid rgb(68, 66, 66);
+    padding-left : 10px;
+}
+.attribute-container > *:not(:first-child) {
+    border-top : 1px solid rgb(68, 66, 66);
+}
+
+.attribute-section > * {
+    margin-top: 20px;
+}
+
+.attribute-header {
+    font-weight: bold;
+}
+
+.attribute-label {
+    font-size: 14px;
+}
+
+.image-list img {
+    margin: 5px;
+}
+
+.selected-image {
+    border: 2px solid black;
+}
+
+@media (max-width: 992px) { 
+    .attribute-container {
+        border-left: none;
+    }
+ }

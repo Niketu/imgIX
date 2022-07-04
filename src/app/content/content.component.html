@@ -1,0 +1,11 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-9 d-flex justify-content-center align-items-center border-bottom">
+      <router-outlet></router-outlet>
+      <app-result [consolidateUrl]="consolidateUrl"></app-result>
+    </div>
+    <div class="col-lg-3">
+      <app-attributes (setConsolidateUrl)="setConsolidateUrl($event)"></app-attributes>
+    </div>
+  </div>
+</div>
